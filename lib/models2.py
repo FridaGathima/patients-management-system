@@ -2,11 +2,14 @@ def main():
 
     #initialize patients list
     patientsList = []
-    infile = open("allPatientsList", "r") #open the txt file when program loads
-    line = infile.readline() # to read line by line
-    while line:
-        patientsList.append(line.rstrip("\n)").split(","))
-        line = infile.readline() #will append and read the txt file
+    # infile = open("allPatientsList", "r") #open the txt file when program loads
+    # line = infile.readline() # to read line by line
+    # while line:
+    #     patientsList.append(line.rstrip("\n)").split(","))
+    #     line = infile.readline() #will append and read the txt file
+    #     infile.close()
+
+
     choice = 0
     while choice != 4: # exit the loop when 4 is selected
         print("***Patients Management System***")
