@@ -2,14 +2,6 @@
 from sqlalchemy import create_engine, ForeignKey, Column, String, Integer, CHAR
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker 
-# import click
-   
-# @click.command()
-# def hello():
-#     click.echo('Hello World!')
-
-# if __name__ == '__main__':
-#     hello()
 
 engine = create_engine('sqlite:///patients_management.db')
 Base = declarative_base()
